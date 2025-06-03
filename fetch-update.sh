@@ -19,7 +19,7 @@ fi
 
 STATUS=$(git pull)
 
-if [[ $STATUS = "Already up to date."]]
+if [ "$STATUS" == "Already up to date."]; then
     exit 0
 fi
 
