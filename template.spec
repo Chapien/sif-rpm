@@ -2,7 +2,7 @@
 Name:           sif
 Version:        %{version}
 Release:        1%{?dist}
-Summary:        RPM package for Steam Icon Fixer.
+Summary:        SIF is a simple Python script allowing you to fix runtime icons of Steam games displayed in dock or panel to match Linux system icon theme.
 
 License:        ASL 2.0
 URL:            https://github.com/BlueManCZ/SIF
@@ -18,7 +18,7 @@ Requires:       bash
 BuildArch:      noarch
 
 %description
-Steam Icon Fixer.
+SIF is a simple Python script allowing you to fix runtime icons of Steam games displayed in dock or panel to match Linux system icon theme.
 
 %prep
 %setup -q
