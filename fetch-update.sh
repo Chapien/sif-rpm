@@ -36,7 +36,7 @@ tar -cvzf sif-$COMMIT.tar.gz sif-$COMMIT
 
 rm -rf sif-$COMMIT
 
-mv -f sif-$COMMIT.tar.gz /home/$USER/Utilities/Staging/sif-rpm
+mv -f sif-$COMMIT.tar.gz /home/$USER/Utilities/Staging/sif-rpm/SOURCES
 cd /home/$USER/Utilities/Staging/sif-rpm
 
 git add -A
