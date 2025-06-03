@@ -6,7 +6,7 @@ Summary:        SIF is a simple Python script allowing you to fix runtime icons 
 
 License:        Apache-2.0
 URL:            https://github.com/BlueManCZ/SIF
-Source0:        https://github.com/Chapien/sif-rpm/raw/refs/heads/main/SOURCES/sif-%{version}.tar.gz
+Source0:        https://github.com/Chapien/sif-rpm/raw/refs/heads/main/SOURCES/sif-steam-%{version}.tar.gz
 
 BuildRequires:  python3-devel
 Requires:       python3dist(PyGObject)

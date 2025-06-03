@@ -24,18 +24,18 @@ fi
 
 COMMIT=$(git rev-list --count --all)
 sed "s/_VERSION_/$COMMIT/g" template.spec > SPEC/sif.spec
-mkdir sif-$COMMIT
-cp sif.py sif-$COMMIT
-cp database.json sif-$COMMIT
-cp README.md sif-$COMMIT
-cp fix-wm-class.sh sif-$COMMIT
-cp LICENSE sif-$COMMIT
+mkdir sif-steam-$COMMIT
+cp sif.py sif-steam-$COMMIT
+cp database.json sif-steam-$COMMIT
+cp README.md sif-steam-$COMMIT
+cp fix-wm-class.sh sif-steam-$COMMIT
+cp LICENSE sif-steam-$COMMIT
 
-tar -cvzf sif-$COMMIT.tar.gz sif-$COMMIT
+tar -cvzf sif-steam-$COMMIT.tar.gz sif-steam-$COMMIT
 
-rm -rf sif-$COMMIT
+rm -rf sif-steam-$COMMIT
 
-mv -f sif-$COMMIT.tar.gz /home/$USER/Utilities/Staging/sif-rpm/SOURCES
+mv -f sif-steam-$COMMIT.tar.gz /home/$USER/Utilities/Staging/sif-rpm/SOURCES
 cd /home/$USER/Utilities/Staging/sif-rpm
 
 git add -A

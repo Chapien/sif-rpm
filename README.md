@@ -2,7 +2,7 @@ This is a COPR repo to provide an RPM installer for [SIF - Steam Icon Fixer](htt
 
 Add the repo with `sudo dnf copr enable chapien/SIF`
 
-Once the repo is added, run `sudo dnf install sif`. See the Readme for usage details.
+Once the repo is added, run `sudo dnf install sif-steam`. See the Readme for usage details.
 
 For installation issues relating to the rpm package, please contact me at [inquiries@chapien.net](mailto:inquiries@chapien.net).
 
