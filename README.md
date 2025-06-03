@@ -1,4 +1,4 @@
-This is a COPR repo to provide an RPM installer for [SIF - Steam Icon Fixer](https://github.com/BlueManCZ/SIF)
+This is a [COPR repo](https://copr.fedorainfracloud.org/coprs/chapien/SIF/) to provide an RPM installer for [SIF - Steam Icon Fixer](https://github.com/BlueManCZ/SIF)
 
 Add the repo with `sudo dnf copr enable chapien/SIF`
 
