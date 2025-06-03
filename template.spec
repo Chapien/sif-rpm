@@ -6,7 +6,7 @@ Summary:        RPM package for Steam Icon Fixer.
 
 License:        ASL 2.0
 URL:            https://github.com/BlueManCZ/SIF
-Source0:        sif-%{version}.tar.gz
+Source0:        https://github.com/Chapien/sif-rpm/raw/refs/heads/main/SOURCES/sif-%{version}.tar.gz
 
 Requires:       python3
 Requires:       python3-gobject
