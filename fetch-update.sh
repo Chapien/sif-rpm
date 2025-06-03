@@ -24,8 +24,16 @@ if [ "$STATUS" == "Already up to date."]; then
 fi
 
 COMMIT=$(git rev-list --count --all)
+mkdir sif-$COMMIT
+cp sif.py sif-$COMMIT
+cp database.json sif-$COMMIT
+cp README.md sif-$COMMIT
+cp fix-wm-class.sh sif-$COMMIT
+cp LICENSE sif-$COMMIT
 
-tar -cvzf sif-$COMMIT.tar.gz sif.py database.json README.md fix-wm-class.sh LICENSE
+tar -cvzf sif-$COMMIT.tar.gz sif-$COMMIT
+
+rm -rf sif-$COMMIT
 
 mv -f sif-$COMMIT.tar.gz /home/$USER/Utilities/Staging/sif-rpm
 cd /home/$USER/Utilities/Staging/sif-rpm
