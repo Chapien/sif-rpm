@@ -27,6 +27,7 @@ SIF is a simple Python script allowing you to fix runtime icons of Steam games d
 mkdir -p %{buildroot}/%{_bindir}
 mkdir -p %{buildroot}/%{_datadir}
 mkdir -p %{buildroot}/%{_datadir}/%{name}
+%py3_shebang_fix sif.py
 install -m 0755 sif.py %{buildroot}%{_datadir}/%{name}/sif.py
 install -m 0755 fix-wm-class.sh %{buildroot}%{_datadir}/%{name}/fix-wm-class.sh
 install -m 0644 database.json %{buildroot}%{_datadir}/%{name}/database.json
