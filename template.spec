@@ -1,4 +1,4 @@
-%define version 163
+%define version _VERSION_
 Name:           sif
 Version:        %{version}
 Release:        1%{?dist}
