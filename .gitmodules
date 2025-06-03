@@ -1,0 +1,3 @@
+[submodule "sif"]
+	path = sif
+	url = git@github.com:BlueManCZ/SIF.git
