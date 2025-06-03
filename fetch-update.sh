@@ -13,6 +13,10 @@ fi
 if test -d "SIF"; then
     cd SIF
     STATUS=$(git pull)
+    if [ "$STATUS" = "Already up to date." ]; then
+        echo Already up to date!
+        exit 0
+    fi
 else
     git clone git@github.com:BlueManCZ/SIF.git
     cd SIF
