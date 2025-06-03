@@ -12,15 +12,13 @@ fi
 
 if test -d "SIF"; then
     cd SIF
+    STATUS=$(git pull)
+    if [ "$STATUS" = "Already up to date." ]; then
+        exit 0
+    fi
 else
     git clone git@github.com:BlueManCZ/SIF.git
     cd SIF
-fi
-
-STATUS=$(git pull)
-echo $STATUS
-if [ "$STATUS" = "Already up to date." ]; then
-    exit 0
 fi
 
 COMMIT=$(git rev-list --count --all)
