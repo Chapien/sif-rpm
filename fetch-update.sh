@@ -18,7 +18,7 @@ else
 fi
 
 STATUS=$(git pull)
-
+echo $STATUS
 if [ "$STATUS" = "Already up to date."]; then
     exit 0
 fi
