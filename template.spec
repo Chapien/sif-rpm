@@ -4,7 +4,7 @@ Version:        %{version}
 Release:        1%{?dist}
 Summary:        SIF is a simple Python script allowing you to fix runtime icons of Steam games displayed in dock or panel to match Linux system icon theme.
 
-License:        ASL 2.0
+License:        Apache-2.0
 URL:            https://github.com/BlueManCZ/SIF
 Source0:        https://github.com/Chapien/sif-rpm/raw/refs/heads/main/SOURCES/sif-%{version}.tar.gz
 
