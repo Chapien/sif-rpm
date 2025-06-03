@@ -24,6 +24,7 @@ if [ "$STATUS" = "Already up to date." ]; then
 fi
 
 COMMIT=$(git rev-list --count --all)
+sed "s/_VERSION_/$COMMIT/g" template.spec > SPEC/sif.spec
 mkdir sif-$COMMIT
 cp sif.py sif-$COMMIT
 cp database.json sif-$COMMIT
