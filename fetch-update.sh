@@ -14,7 +14,7 @@ if test -d "SIF"; then
     cd SIF
     STATUS=$(git pull)
     if [ "$STATUS" = "Already up to date." ]; then
-        echo Already up to date!
+        echo $STATUS
         exit 0
     fi
 else
