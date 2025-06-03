@@ -9,7 +9,7 @@ URL:            https://github.com/BlueManCZ/SIF
 Source0:        https://github.com/Chapien/sif-rpm/raw/refs/heads/main/SOURCES/sif-%{version}.tar.gz
 
 BuildRequires:  python3-devel
-Requires:       python3dist(PyGObject)
+Requires:       python3dist(pygobject)
 Requires:       python3dist(requests)
 Requires:       python3dist(vdf)
 Requires:       xdotool
