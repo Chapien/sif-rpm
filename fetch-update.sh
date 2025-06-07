@@ -41,7 +41,7 @@ cp LICENSE sif-steam-$COMMIT
 
 echo "Compressing sif-steam-$COMMIT..."
 tar -cvzf sif-steam-$COMMIT.tar.gz sif-steam-$COMMIT
-if [$? -eq 0 ]; then
+if [ $? -eq 0 ]; then
     echo "Successfully compressed sif-steam-$COMMIT!"
 else
     echo "Failed to compress sif-steam-$COMMIT..."
