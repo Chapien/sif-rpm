@@ -2,8 +2,8 @@
 eval `ssh-agent`
 ssh-add
 
-mkdir -p /home/$USER/Utilities/Staging
-cd /home/$USER/Utilities/Staging
+mkdir -p /home/$USER/repos
+cd /home/$USER/repos
 
 if ! test -d "sif-rpm"; then
     echo "No repo!"
@@ -35,8 +35,8 @@ tar -cvzf sif-steam-$COMMIT.tar.gz sif-steam-$COMMIT
 
 rm -rf sif-steam-$COMMIT
 
-mv -f sif-steam-$COMMIT.tar.gz /home/$USER/Utilities/Staging/sif-rpm/SOURCES
-cd /home/$USER/Utilities/Staging/sif-rpm
+mv -f sif-steam-$COMMIT.tar.gz /home/$USER/repos/sif-rpm/SOURCES
+cd /home/$USER/repos/sif-rpm
 
 git add -A
 git commit -m "Mirroring update to SIF."
