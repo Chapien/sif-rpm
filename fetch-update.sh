@@ -60,7 +60,7 @@ echo "Spec file updated."
 git add -A
 git commit -m "Mirroring update to SIF."
 git push
-if [$? -eq 0 ]; then
+if [ $? -eq 0 ]; then
     echo "Successfully updated SIF build source and pushed to git!"
     exit 0
 else
