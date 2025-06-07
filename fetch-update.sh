@@ -23,7 +23,7 @@ else
 fi
 
 COMMIT=$(git rev-list --count --all)
-sed "s/_VERSION_/$COMMIT/g" template.spec > SPEC/sif.spec
+sed "s/_VERSION_/$COMMIT/g" template.spec > SPECS/sif.spec
 mkdir sif-steam-$COMMIT
 cp sif.py sif-steam-$COMMIT
 cp database.json sif-steam-$COMMIT
