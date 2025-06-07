@@ -1,5 +1,5 @@
 %define version _VERSION_
-Name:           sif
+Name:           sif-steam
 Version:        %{version}
 Release:        1%{?dist}
 Summary:        SIF is a simple Python script allowing you to fix runtime icons of Steam games displayed in dock or panel to match Linux system icon theme.
